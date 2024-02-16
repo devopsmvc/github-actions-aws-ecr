@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /github-actions-aws-acr
+RUN go build -o /github-actions-aws-acr .
 
 FROM gcr.io/distroless/base-debian10
 
